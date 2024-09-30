@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="trabaio.js"></script>
+</head>
+<body>
+    <h1>Tarefa Vendas</h1>
+    <hr>
+    <form id="linhaForm">
+        <input type="number" name="idis" id="idis" placeholder="Digite o ID do produto" required>
+        <br><br>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome do produto" required>
+        <br><br>
+        <input type="text" name="marca" id="marca" placeholder="Digite a marca do produto" required>
+        <br><br>
+        <input type="text" name="segmento" id="segmento" placeholder="Digite o segmento do produto" required>
+        <br><br>
+        <input type="number" name="preco" id="preco" placeholder="Digite o preço do produto" required>
+        <br><br>
+        <label for="venda">Data da venda</label>
+        <input type="date" name="venda" id="venda" required>
+        <br><br>
+        <button type="button" onclick="adicionarLinha()">Adicionar</button>
+    </form>
+    <br><br>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Segmento</th>
+                <th>preco</th> 
+                <th>Data da venda</th> 
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
