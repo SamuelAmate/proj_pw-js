@@ -2,7 +2,7 @@ let proximoId = 1
 
 function adicionarLinha(){
     //Entrada de valores do formulário
-    const idis = document.getElementById("idis").value;
+    const Id = document.getElementById("Id").value;
     const nome = document.getElementById("nome").value;
     const marca = document.getElementById("marca").value;
     const segmento = document.getElementById("segmento").value;
@@ -10,8 +10,8 @@ function adicionarLinha(){
     const venda = document.getElementById("venda").value;
 
     //Se for preenchido vazio
-    if(idis === '' || nome === '' || marca === ''|| segmento === '' || preco === ''|| venda === '')
-        alert("Preencha os valores do formulário!")
+    if(Id === '' || nome === '' || marca === ''|| segmento === '' || preco === ''|| venda === '')
+        window.alert("Preencha Todos os Valores do Formulário!");
     else {
         //Cria uma linha na tabela se não existir
 const tabela = document.getElementById("tabelaDados") .getElementsByTagName('tbody') [0];
@@ -26,8 +26,9 @@ const celSegmento = novalinha.insertCell(3);
 const celPreco = novalinha.insertCell(4);
 const celVenda = novalinha.insertCell(5);
 
+
 //Inserindo os valores dentro das celulas
-celId.innerHTML = idis;
+celId.innerHTML = Id;
 celNome.innerHTML = nome;
 celMarca.innerHTML = marca;
 celSegmento.innerHTML = segmento;

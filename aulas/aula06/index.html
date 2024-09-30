@@ -5,12 +5,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="trabaio.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
 </head>
 <body>
-    <h1>Tarefa Vendas</h1>
-    <hr>
+    <div id="title">
+    <h1>Formulário Vendas</h1></div> 
+    <div id="imagem"><img id="imagem" src="image.png" width="100px" height="100px"></div>
+    <hr><br><br><br>
+    <div>
     <form id="linhaForm">
-        <input type="number" name="idis" id="idis" placeholder="Digite o ID do produto" required>
+        <input type="number" name="Id" id="Id" placeholder="Digite o ID do produto" required>
         <br><br>
         <input type="text" name="nome" id="nome" placeholder="Digite o nome do produto" required>
         <br><br>
@@ -33,11 +39,12 @@
                 <th>Nome</th>
                 <th>Marca</th>
                 <th>Segmento</th>
-                <th>preco</th> 
-                <th>Data da venda</th> 
+                <th>Preço R$</th> 
+                <th>Data da Venda</th> 
             </tr>
         </thead>
         <tbody></tbody>
     </table>
+</div>
 </body>
 </html>
