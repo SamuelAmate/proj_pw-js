@@ -1,37 +1,35 @@
-*{
-    font-family: Roboto, Arial, sans-serif;
+body{
+    font-family: Roboto;
+    background-image: url(fundo.webp);
 }
 
-#imagem {
-    float: right;
-    margin: 0;
-   padding: 10px;
+.title{
+    position: relative;
+    display: flex;
+    font-family: Roboto;
+    color: white;
 }
 
-#title{
-     font-family: 'Roboto';
-     font-size: xx-large;
-     line-height: 60px;
-     float: left;
-     margin: 0;
-     padding: 25px;
+.imagem{
+    margin-left: auto;
+}
+
+.content{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    text-align: center;
 }
 
 form{
-    font-family: Roboto, Arial, sans-serif;
+    font-family: Roboto;
     border-collapse: collapse;
     width: 100%;
-    padding: 10px;
-}
-
-input,label{
-    padding-bottom: 5px;
-    padding-top: 5px;
-    margin: 5px;
-}
-
-input{
-    width: 20%;
 }
 
 table{
