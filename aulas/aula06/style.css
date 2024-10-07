@@ -16,7 +16,7 @@ body{
 
 .content{
     background-color: white;
-    width: 400px;
+    width: 800px;
     height: 600px;
     position: absolute;
     top: 60%;
@@ -26,24 +26,41 @@ body{
     text-align: center;
 }
 
+#botao{
+    font-family: Roboto;
+    font-size: 20px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: #000000;
+}
+
+#botao:hover{
+    border: 2px solid #0846a3;
+    background-color: #0846a3;
+    color: white;
+    transition: 0.3s;
+}
+
 form{
     font-family: Roboto;
-    border-collapse: collapse;
     width: 100%;
 }
 
 table{
     font-family: Roboto, Arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
+    margin: auto;
 }
 
 td,th{
-    border: 1px solid #ddd;
+    border: 1px solid black;
     text-align: left;
     padding: 8px;
 }
 
-tr:ntd-child(even){
+tr:nth-child(even){
     background-color: #ddd;
 }
