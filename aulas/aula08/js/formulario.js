@@ -12,7 +12,7 @@ function adicionarLinha(){
         alert("Preencha os valores do formulário!")
     else {
         //Cria uma linha na tabela se não existir
-const tabela = document.getElementById("tabelaDados") .getElementsByTagName('tbody') [0];
+const tabela = document.getElementById("tabelaDados").getElementsByTagName('tbody') [0];
 //Inserindo uma nova linha
 const novalinha = tabela.insertRow();
 
