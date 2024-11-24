@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#div1").fadeToggle("slow");
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle("slow");
+    });
+});
+</script>
+</head>
+<body>
+    <div id="title"><h1>Fade Toggle</h1></div><br>
+    <h1 id="subtitle">Caça Rato Moments</h1><br>
+    <button class="button">Fade</button><br><br>
+    <div id="centralizar">
+    <div id="div1" style="width:240px;height:240px;display:none;background-image:url(../img/ca1.png);"></div><br>
+    <div id="div2" style="width:240px;height:240px;display:none;background-image:url(../img/ca2.png);"></div><br>
+    <div id="div3" style="width:240px;height:240px;display:none;background-image:url(../img/ca3.png);"></div>
+</div>
+</body>
+</html>
